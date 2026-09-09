@@ -33,7 +33,7 @@ const experience = [
     ]
   },
   {
-    title: 'All Together México — Coordinador de Desarrollo',
+    title: 'All Together México — Desarrollador Web',
     date: 'Julio 2022 – Enero 2024',
     description: 'Desarrollo y mantenimiento de soluciones web para congresos, convenciones y eventos, participando en proyectos digitales relacionados con la operación y comunicación de eventos.',
     bullets: [
