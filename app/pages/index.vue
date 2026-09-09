@@ -33,15 +33,18 @@ const experience = [
     ]
   },
   {
-    title: 'Coordinador de Desarrollo — Área de TI',
+    title: 'All Together México — Coordinador de Desarrollo',
     date: 'Julio 2022 – Enero 2024',
-    description: 'Desarrollo y mantenimiento de soluciones web para congresos, eventos y proyectos digitales, además de coordinación de actividades de desarrollo dentro del área de TI.',
+    description: 'Desarrollo y mantenimiento de soluciones web para congresos, convenciones y eventos, participando en proyectos digitales relacionados con la operación y comunicación de eventos.',
     bullets: [
-      'Desarrollo y mantenimiento de micrositios web para congresos y eventos.',
-      'Implementación y personalización de sitios mediante WordPress.',
-      'Desarrollo de interfaces y funcionalidades web de acuerdo con requerimientos específicos.',
-      'Resolución de incidencias y mantenimiento de aplicaciones en producción.',
-      'Coordinación y seguimiento de actividades relacionadas con desarrollo web y colaboración con diversas áreas.'
+      'Desarrollo y mantenimiento de micrositios web para congresos, convenciones y eventos.',
+      'Implementación y personalización de sitios utilizando WordPress.',
+      'Desarrollo de interfaces y funcionalidades web de acuerdo con los requerimientos de cada evento.',
+      'Administración y actualización de contenido de sitios web.',
+      'Coordinación y seguimiento de actividades relacionadas con desarrollo web.',
+      'Resolución de incidencias y mantenimiento de sitios en producción.',
+      'Colaboración con diferentes áreas para transformar requerimientos en soluciones web.',
+      'Participación en proyectos con requerimientos específicos y fechas de entrega definidas.'
     ]
   }
 ];
@@ -178,6 +181,7 @@ const projects = [
           <a href="#experiencia">Experiencia</a>
           <a href="#proyectos">Proyectos</a>
           <a href="#habilidades">Habilidades</a>
+          <a :href="withBase('/Oscar_Jimenez_Reyes_Full_Stack_Developer_CV_Redesigned.pdf')" target="_blank" class="nav-cv-btn" download="Oscar_Jimenez_Reyes_CV.pdf">CV</a>
           <a href="#contacto" class="nav-contact">Contacto</a>
         </div>
       </div>
@@ -193,6 +197,14 @@ const projects = [
 
         <div class="hero-actions">
           <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+          <a :href="withBase('/Oscar_Jimenez_Reyes_Full_Stack_Developer_CV_Redesigned.pdf')" target="_blank" class="btn btn-cv" download="Oscar_Jimenez_Reyes_CV.pdf">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Descargar CV
+          </a>
           <a href="#contacto" class="btn btn-secondary">Contactar</a>
         </div>
       </div>
@@ -467,6 +479,37 @@ const projects = [
 .hero-actions {
   display: flex;
   gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-cv {
+  background: rgba(176, 92, 255, 0.12);
+  color: var(--text-primary);
+  border: 1px solid rgba(176, 92, 255, 0.35);
+  gap: 8px;
+}
+
+.btn-cv:hover {
+  background: rgba(176, 92, 255, 0.25);
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(176, 92, 255, 0.25);
+}
+
+.nav-cv-btn {
+  border: 1px solid rgba(176, 92, 255, 0.4);
+  padding: 6px 14px;
+  border-radius: 6px;
+  color: #c084fc !important;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.nav-cv-btn:hover {
+  background: var(--accent-color);
+  color: #fff !important;
+  border-color: var(--accent-color);
 }
 
 /* Buttons */
