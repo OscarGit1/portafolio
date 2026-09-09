@@ -1,0 +1,1 @@
+import{_ as c,s as a,e,w as _,b as n,d as r}from"./index-Bo6eTSxO.js";const i={},l={class:"fondo_titulo"};function d(o,p){const t=n("v-img"),s=n("v-container");return r(),a("div",l,[e(s,null,{default:_(()=>[e(t,{src:o.$publicPath+"pestanas/Mensaje_01-11-11-11.webp"},null,8,["src"])]),_:1})])}const m=c(i,[["render",d],["__scopeId","data-v-2047204f"]]);export{m as default};
