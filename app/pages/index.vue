@@ -155,10 +155,10 @@ const projects = [
   {
     name: 'Flores La Herradura',
     type: 'link',
-    url: '#',
-    desc: 'Sitio web para presencia digital y exhibición del catálogo de flores. Por definir dominio.',
+    url: 'https://floreslaherradura.com/',
+    desc: 'Sitio web para presencia digital y exhibición del catálogo de flores.',
     image: '/FloresLaHerradura/Flores.png',
-    tags: ['Nuxt', 'Por definir dominio']
+    tags: ['Activo', 'Nuxt']
   },
   {
     name: 'Innovaciones AMCPER',
