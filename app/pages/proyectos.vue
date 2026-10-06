@@ -1,8 +1,8 @@
 <script setup>
 useHead({
-  title: 'Oscar Jiménez Reyes | Proyectos',
+  title: 'Portafolio de Proyectos',
   meta: [
-    { name: 'description', content: 'Galería y catálogo de proyectos web desarrollados por Oscar Jiménez Reyes.' }
+    { name: 'description', content: 'Galería y catálogo de proyectos web y plataformas digitales.' }
   ]
 });
 
@@ -87,20 +87,9 @@ const projects = [
 <template>
   <main class="portfolio-container">
     <div class="container animate-in">
-      <!-- Header con navegación de regreso -->
       <header class="page-header">
-        <NuxtLink to="/" class="back-link">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="19" y1="12" x2="5" y2="12"></line>
-            <polyline points="12 19 5 12 12 5"></polyline>
-          </svg>
-          Volver al portafolio
-        </NuxtLink>
-        <div class="header-titles">
-          <h1 class="page-title">Proyectos</h1>
-          <p class="page-subtitle">Galería de sitios web y aplicaciones desarrolladas</p>
-        </div>
+        <h1 class="page-title">Proyectos</h1>
+        <p class="page-subtitle">Galería de sitios web y aplicaciones desarrolladas</p>
       </header>
 
       <!-- Grid exclusivo de proyectos -->
@@ -179,30 +168,7 @@ const projects = [
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-}
-
-.back-link {
-  display: inline-flex;
-  align-items: center;
   gap: 8px;
-  color: var(--text-secondary);
-  text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 500;
-  transition: color 0.2s ease, transform 0.2s ease;
-  width: fit-content;
-}
-
-.back-link:hover {
-  color: #d8b4fe;
-  transform: translateX(-3px);
-}
-
-.header-titles {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
 }
 
 .page-title {
