@@ -6,11 +6,11 @@ export default defineNuxtConfig({
   app: {
     baseURL: process.env.NUXT_APP_BASE_URL || '/',
     head: {
-      title: 'Oscar Jiménez Reyes | Full Stack Developer',
+      title: 'Oscar Jiménez Reyes | Portafolio de Proyectos',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { hid: 'description', name: 'description', content: 'Portafolio profesional de Oscar Jiménez Reyes - Full Stack Developer.' }
+        { hid: 'description', name: 'description', content: 'Portafolio de proyectos y soluciones digitales desarrolladas por Oscar Jiménez Reyes.' }
       ],
       link: [
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
