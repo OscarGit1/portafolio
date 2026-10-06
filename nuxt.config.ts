@@ -23,7 +23,7 @@ export default defineNuxtConfig({
     prerender: {
       crawlLinks: false,
       failOnError: false,
-      routes: ['/']
+      routes: ['/', '/proyectos']
     }
   }
 })

@@ -237,7 +237,16 @@ const projects = [
     <!-- Projects Section -->
     <section id="proyectos" class="projects section container animate-in" style="animation-delay: 0.2s;">
       <div class="section-header">
-        <h2>Proyectos Destacados</h2>
+        <div class="section-header-top">
+          <h2>Proyectos Destacados</h2>
+          <NuxtLink to="/proyectos" class="view-showcase-btn">
+            Vista de solo proyectos
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </NuxtLink>
+        </div>
         <div class="divider"></div>
       </div>
 
@@ -421,6 +430,42 @@ const projects = [
   margin: 0 0 16px 0;
   font-weight: 700;
   letter-spacing: -0.5px;
+}
+
+.section-header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.section-header-top h2 {
+  margin: 0;
+}
+
+.view-showcase-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: rgba(176, 92, 255, 0.1);
+  border: 1px solid rgba(176, 92, 255, 0.3);
+  border-radius: 8px;
+  color: #d8b4fe;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.view-showcase-btn:hover {
+  background: var(--accent-color);
+  color: #fff;
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(176, 92, 255, 0.3);
 }
 
 .divider {
